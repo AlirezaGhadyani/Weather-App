@@ -1,0 +1,111 @@
+@font-face {
+  font-family: fa_font;
+  src: url(./Fonts/IranSans.ttf);
+}
+
+@font-face {
+  font-family: en_font;
+  src: url(./Fonts/Poppins.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  color: #ececec;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: fa_font, en_font;
+  background: url(./Img/Background.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container {
+  max-width: 90%;
+  width: 600px;
+  height: 450px;
+  padding: 3% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  background: #ffffff13;
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+
+  .input-row {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .search-inp {
+      width: 85%;
+      font-size: 2rem;
+      padding: 1% 2%;
+      border-radius: 0.8rem;
+      border: 0;
+      direction: rtl;
+      background-color: #00000044;
+      font-family: fa_font, en_font;
+      text-transform: capitalize;
+    }
+
+    .search-btn {
+      width: 10%;
+      font-size: 2rem;
+      padding: 2.6% 7%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #00000044;
+      border-radius: 0.6rem;
+      cursor: pointer;
+      border: 0;
+    }
+  }
+
+  .info-row {
+    width: 90%;
+    margin-top: 4%;
+    padding: 2% 1%;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+
+    .city-name {
+      font-size: 3rem;
+      margin-bottom: 6%;
+    }
+
+    .status-row {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .degre {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.humidity,
+.wind-speed {
+  font-family: en_font;
+  direction: ltr;
+}

@@ -1,0 +1,153 @@
+@font-face {
+  font-family: fa_font;
+  src: url(./Fonts/IranSans.ttf);
+}
+
+@font-face {
+  font-family: en_font;
+  src: url(./Fonts/Poppins.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  color: #ececec;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: fa_font, en_font;
+  background: url(./Img/Background.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container {
+  max-width: 90%;
+  width: 600px;
+  height: 450px;
+  padding: 3% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+  background: #ffffff13;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  overflow-y: auto;
+}
+
+.container .input-row {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .input-row .search-inp {
+  width: 85%;
+  font-size: 2rem;
+  padding: 1% 2%;
+  border-radius: 0.8rem;
+  border: 0;
+  direction: rtl;
+  background-color: #00000044;
+  font-family: fa_font, en_font;
+  text-transform: capitalize;
+}
+
+.container .input-row .search-btn {
+  width: 10%;
+  font-size: 2rem;
+  padding: 2.6% 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #00000044;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  border: 0;
+}
+
+.container .info-row {
+  width: 90%;
+  margin-top: 4%;
+  padding: 2% 1%;
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 3rem;
+}
+
+.container .info-row .city-name {
+  font-size: 3rem;
+  margin-bottom: 6%;
+}
+
+.container .info-row .status-row {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .info-row .degre {
+  font-size: 2.2rem;
+}
+
+.humidity,
+.wind-speed {
+  font-family: en_font;
+  direction: ltr;
+}
+/*# sourceMappingURL=style.css.map */
